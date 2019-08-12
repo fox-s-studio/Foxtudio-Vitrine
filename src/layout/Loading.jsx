@@ -7,7 +7,7 @@ function Loading() {
                 <polygon points="16,0 32,32 0,32">
                 </polygon>
             </svg>
-            <p>Loading</p>
+            <p>FoxStudio</p>
         </div>
     );
 };

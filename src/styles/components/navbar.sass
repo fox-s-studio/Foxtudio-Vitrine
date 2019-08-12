@@ -1,0 +1,36 @@
+.Navbar
+    align-items: center
+    background-color: hsla(243,27%,40%,.2)
+    box-shadow: 5px 0 10px hsla(180, 67%, 54%, .5)
+    display: flex
+    flex-direction: row
+    height: 100px
+    justify-content: space-between
+    left: 0
+    padding: 10px 20px
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 10
+    &.active
+        animation: NavActivate .5s forwards
+        position: fixed
+        transition-duration: 2s
+    .Logo
+        height: 100%
+        img
+            max-height: 100%
+    .Menu
+        .item
+            display: inline
+            padding: 0 20px
+        a
+            color: $light-3
+            text-transform: uppercase
+            transition-duration: .3s
+            &:hover, &.current
+                color: $primary
+                cursor: pointer
+
+        @media screen and (max-width: 750px)
+            display: none

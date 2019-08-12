@@ -1,0 +1,32 @@
+.MobileMenu
+    background-color: $dark-3
+    display: none
+    justify-content: space-between
+    position: absolute
+    left: 20px
+    top: 20px
+    height: calc(100% - 40px)
+    width: calc(100% - 40px)
+    z-index: 1000
+    &.active
+        display: grid
+        grid-template-rows: 80px 1fr 50px
+        grid-auto-columns: 1fr
+    .Logo
+        text-align: center
+        width: 100%
+        img
+            max-height: 100%
+    .Menu
+        width: 100%
+        align-items: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .item
+            margin: 20px 0
+            a
+                color: $light-3
+                transition-duration: .3s
+                &:hover
+                    color: $primary
