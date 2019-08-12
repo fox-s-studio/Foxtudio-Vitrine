@@ -1,0 +1,28 @@
+.Header
+    align-items: center
+    display: flex
+    flex-direction: column
+    height: 100vh
+    justify-content: center
+    width: 100%
+    overflow: hidden
+    position: relative
+    background: linear-gradient(to bottom,rgba($dark-1, .1),rgba($dark-1, 1))
+    .fullVideo
+        z-index: -1
+        position: absolute
+        filter: blur(8px)
+        left: 0
+        top: 0
+        video
+            max-height: 100%
+    .HeaderContent
+        color: $light-3
+        text-align: center
+        .title
+            &.big
+                animation: appearsElemsR 1.5s forwards
+            &.regular
+                animation: appearsElemsL 1s forwards
+            &.small
+                animation: appearsElemsL 1.3s forwards
