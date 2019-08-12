@@ -18,17 +18,6 @@ function Navbar(props) {
                     <a href="http://#">nous rejoindre</a>
                 </li>
             </ul>
-            <ul className="Menu mobile">
-                <li className="item" data-section="servers">
-                    <a href="http://#">à propos</a>
-                </li>
-                <li className="item" data-section="team">
-                    <a href="http://#">l'équipe</a>
-                </li>
-                <li className="item" data-section="discord">
-                    <a href="http://#">nous rejoindre</a>
-                </li>
-            </ul>
         </div>
     )
 };
